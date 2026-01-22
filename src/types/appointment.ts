@@ -16,10 +16,8 @@ export interface Doctor {
 }
 
 export const DOCTORS: Doctor[] = [
-  { id: '1', name: 'Dr. Arun', specialty: 'Cardiologist' },
-  { id: '2', name: 'Dr. Meena', specialty: 'Dermatologist' },
-  { id: '3', name: 'Dr. Ravi', specialty: 'General Physician' },
-  { id: '4', name: 'Dr. Priya', specialty: 'Pediatrician' },
+  { id: '1', name: 'Dr. Chandhira Kumar', specialty: 'General Physician' },
+  { id: '2', name: 'Dr. Soundarya', specialty: 'General Physician' },
 ];
 
 export const TIME_SLOTS = [

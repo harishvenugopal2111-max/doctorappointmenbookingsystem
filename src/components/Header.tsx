@@ -17,7 +17,7 @@ export function Header() {
             </div>
           </div>
           <h1 className="text-3xl md:text-4xl font-display font-bold text-primary-foreground mb-2">
-            Doctor Appointment
+            Prabha Medicals
           </h1>
           <p className="text-primary-foreground/80 flex items-center gap-2">
             Book your appointment with ease
