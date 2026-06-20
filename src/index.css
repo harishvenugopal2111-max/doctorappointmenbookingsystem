@@ -1,0 +1,129 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700&display=swap');
+
+@layer base {
+  :root {
+    --background: 230 25% 97%;
+    --foreground: 230 40% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 230 40% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 230 40% 15%;
+
+    --primary: 228 85% 55%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 268 85% 45%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 230 20% 92%;
+    --muted-foreground: 230 15% 45%;
+
+    --accent: 228 85% 96%;
+    --accent-foreground: 228 85% 45%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 230 20% 88%;
+    --input: 230 20% 88%;
+    --ring: 228 85% 55%;
+
+    --radius: 0.75rem;
+
+    /* Custom medical theme tokens */
+    --gradient-primary: linear-gradient(135deg, hsl(268 85% 45%) 0%, hsl(228 85% 55%) 100%);
+    --gradient-subtle: linear-gradient(135deg, hsl(268 85% 45% / 0.1) 0%, hsl(228 85% 55% / 0.1) 100%);
+    --shadow-card: 0 4px 20px -4px hsl(228 85% 55% / 0.15);
+    --shadow-elevated: 0 10px 40px -10px hsl(228 85% 55% / 0.25);
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 230 40% 8%;
+    --foreground: 0 0% 95%;
+
+    --card: 230 35% 12%;
+    --card-foreground: 0 0% 95%;
+
+    --popover: 230 35% 12%;
+    --popover-foreground: 0 0% 95%;
+
+    --primary: 228 85% 60%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 268 75% 55%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 230 30% 18%;
+    --muted-foreground: 230 15% 60%;
+
+    --accent: 228 50% 20%;
+    --accent-foreground: 228 85% 70%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 230 30% 20%;
+    --input: 230 30% 20%;
+    --ring: 228 85% 60%;
+
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    font-family: 'Inter', sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+  }
+}
+
+@layer utilities {
+  .gradient-primary {
+    background: var(--gradient-primary);
+  }
+
+  .gradient-text {
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .shadow-card {
+    box-shadow: var(--shadow-card);
+  }
+
+  .shadow-elevated {
+    box-shadow: var(--shadow-elevated);
+  }
+}
